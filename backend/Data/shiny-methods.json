@@ -1,0 +1,45 @@
+[
+  {
+    "pokemonId": 1,
+    "methods": [
+      { "method": "Wild", "odds": "1/500", "notes": null },
+      { "method": "Research", "odds": "1/500", "notes": "Field research encounter" }
+    ]
+  },
+  {
+    "pokemonId": 4,
+    "methods": [
+      { "method": "Wild", "odds": "1/500", "notes": null },
+      { "method": "CommunityDay", "odds": "1/25", "notes": "Charmander Community Day" }
+    ]
+  },
+  {
+    "pokemonId": 7,
+    "methods": [
+      { "method": "Wild", "odds": "1/500", "notes": null }
+    ]
+  },
+  {
+    "pokemonId": 25,
+    "methods": [
+      { "method": "Wild", "odds": "1/500", "notes": null },
+      { "method": "SpotlightHour", "odds": "1/500", "notes": null },
+      { "method": "CommunityDay", "odds": "1/25", "notes": "Pikachu Community Day" }
+    ]
+  },
+  {
+    "pokemonId": 129,
+    "methods": [
+      { "method": "Wild", "odds": "1/500", "notes": null },
+      { "method": "Research", "odds": "1/500", "notes": null }
+    ]
+  },
+  {
+    "pokemonId": 133,
+    "methods": [
+      { "method": "Wild", "odds": "1/500", "notes": null },
+      { "method": "Egg", "odds": "1/500", "notes": "Hatch from 5km egg" },
+      { "method": "CommunityDay", "odds": "1/25", "notes": "Eevee Community Day" }
+    ]
+  }
+]
