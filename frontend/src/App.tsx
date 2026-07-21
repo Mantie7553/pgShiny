@@ -1,6 +1,7 @@
+import PokedexPage from "./pages/PokedexPage"
 
 function App() {
-  return <div>Empty</div>
+  return <PokedexPage />
 }
 
 export default App

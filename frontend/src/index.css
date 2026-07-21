@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+.shiny-shimmer {
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 215, 0, 0.4) 50%,
+        transparent 100%
+    );
+    background-size: 200% auto;
+    animation: shimmer 1.5s linear infinite;
+}
