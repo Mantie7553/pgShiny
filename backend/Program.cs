@@ -8,6 +8,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddOpenApi();
 
+builder.Services.AddControllers();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -29,5 +31,7 @@ using (var scope = app.Services.CreateScope())
     await PokeApiSeeder.SeedAsync(db);
     await ShinyMethodSeeder.SeedAsync(db);
 }
+
+app.MapControllers();
 
 app.Run();
