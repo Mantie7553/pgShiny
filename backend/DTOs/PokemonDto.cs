@@ -18,3 +18,10 @@ public class ShinyMethodDto
     public string Odds { get; set; } = string.Empty;
     public string? Notes { get; set; }
 }
+
+public class AddShinyMethodDto
+{
+    public string Method { get; set; } = string.Empty;
+    public string Odds { get; set; } = string.Empty;
+    public string? Notes { get; set; }
+}

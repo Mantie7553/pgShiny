@@ -1,9 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic;
 using ShinyDex.API.Data;
 using ShinyDex.API.DTOs;
-using ShinyDex.API.Models;
 
 namespace ShinyDex.API.Controllers;
 
