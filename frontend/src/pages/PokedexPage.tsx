@@ -4,6 +4,7 @@ import { getAllPokemon } from "../api/pokemon";
 import type { Pokemon } from "../types/pokemon";
 import PokemonGrid from "../components/PokemonGrid";
 import PokemonList from "../components/PokemonList";
+import PokemonModal from "../components/PokemonModal";
 
 type ViewMode = "grid" | "list";
 
@@ -11,6 +12,7 @@ export default function PokedexPage() {
     const [pokemon, setPokemon] = useState<Pokemon[]>([]);
     const [loading, setLoading] = useState(true);
     const [view, setView] = useState<ViewMode>("grid");
+    const [selectedId, setSelectedId] = useState<number | null>(null);
 
     useEffect(() => {
         getAllPokemon()
@@ -42,11 +44,12 @@ export default function PokedexPage() {
                 {loading ? (
                     <div className="flex items-center justify-center h-64 text-gray-400">Loading...</div>
                 ) : view === "grid" ? (
-                    <PokemonGrid pokemon={pokemon} onSelect={(id) => console.log("selected", id)} />
+                    <PokemonGrid pokemon={pokemon} onSelect={setSelectedId} />
                 ) : (
-                    <PokemonList pokemon={pokemon} onSelect={(id) => console.log("selected", id)} />
+                    <PokemonList pokemon={pokemon} onSelect={setSelectedId} />
                 )}
             </div>
+            <PokemonModal pokemonId={selectedId} onClose={() => setSelectedId(null)} />
         </div>
     );
 }
